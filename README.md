@@ -1,10 +1,11 @@
 # script2
 #!/bin/bash
-read $filename
-if [ -d "$filename" ]; then
-      echo "ls $filename"
-elif [ -f "$filename" ]; then
-       echo "more $filename"
+echo -e "enter file/directory name : \c"
+read fn
+if [ -d "$fn" ]; then
+ls $fn
+elif [ -f = "$fn" ]; then
+more $fn
 else
       echo "invalid"
 fi
